@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+public class Desafio12{
+    public Desafio12(){
+
+    }
+    public void Executar(){
+        int alunos;
+        List<String> lista = new ArrayList();
+        String Nome;
+        
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Quantos alunos tem sua turma: ");
+        alunos = sc.nextInt();
+
+        for(int i=0; i < alunos; i++){
+            System.out.println("Nome do aluno: ");
+            Nome = sc.next();
+            lista.add (Nome);
+        }
+        Collections.sort(lista);
+        System.out.println(lista);
+    }
+    public static void main (String[] args){
+        Desafio12 desafio12;
+        desafio12 = new Desafio12();
+        desafio12.Executar();
+    }
+}

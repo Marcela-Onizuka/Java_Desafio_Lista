@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Desafio06{
+    public Desafio06(){
+
+    }
+    public void Executar(){
+        float largura, altura, litros, mq;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Qual a altura da parede: ");
+        altura = sc.nextFloat();
+        System.out.println("Qual a largura da parede: ");
+        largura = sc.nextFloat();
+        mq = largura * altura;
+        litros=mq/2;
+        System.out.println("Serão necessários " +litros+ " de tinta para pintar essa parede");
+
+    }
+    public static void main (String[] args){
+        Desafio06 desafio06;
+        desafio06 = new Desafio06();
+        desafio06.Executar();
+    }
+}

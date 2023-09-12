@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Desafio09{
+    public Desafio09(){
+
+    }
+    public void Executar(){
+        Double gc, gf;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Qual a temperatura em graus Celsius: ");
+        gc = sc.nextDouble();
+        gf = (gc*1.8)+32;
+        System.out.println("Essa temperatura é equivalente a " +gf+ " graus Fahrenheit");
+
+    }
+    public static void main (String[] args){
+        Desafio09 desafio09;
+        desafio09 = new Desafio09();
+        desafio09.Executar();
+    }
+}

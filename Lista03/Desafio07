@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Desafio07{
+    public Desafio07(){
+
+    }
+    public void Executar(){
+        Double valor, desconto;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Qual o valor do produto: ");
+        valor = sc.nextDouble();
+        desconto = valor*0.95;
+        System.out.println("O valor do produto com 5% de desconto é " +desconto);
+    }
+    public static void main (String[] args){
+        Desafio07 desafio07;
+        desafio07 = new Desafio07();
+        desafio07.Executar();
+    }
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Desafio05{
+    public Desafio05 (){
+
+    }
+    public void Executar(){
+        float real, dolar;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Quantos reais você tem? ");
+        real = sc.nextFloat();
+        dolar=real/5;
+        System.out.println("Você pode comprar " +dolar+ " dolares");
+
+    }
+    public static void main (String[] args){
+        Desafio05 desafio05;
+        desafio05 = new Desafio05();
+        desafio05.Executar();
+    }
+}

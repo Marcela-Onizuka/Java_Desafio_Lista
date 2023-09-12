@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Desafio08{
+    public Desafio08(){
+
+    }
+    public void Executar(){
+        float salario;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Informe o seu salário: ");
+        salario = sc.nextFloat();
+        System.out.println("Seu salario atualizado com aumeto de 15% e de "+salario*1.15);
+
+    }
+    public static void main (String[] args){
+        Desafio08 desafio08;
+        desafio08 = new Desafio08();
+        desafio08.Executar();
+    }
+}
